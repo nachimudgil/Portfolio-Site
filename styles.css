@@ -1,0 +1,46 @@
+body {
+    font: 300 1em "Lato", sans-serif;
+    color: #747704;
+}
+
+.text-muted {
+    color: #bcbbbb;
+}
+
+.text-thin {
+    font-weight: 100;
+}
+
+.title-super {
+    font-size: 60px;
+}
+
+/* Styling of logo here to give it an animation, this makes
+the site more appealing and stylish to the audience.
+*/
+
+.title-logo {
+    margin: 20px 0 0 0;
+    overflow: hidden;
+    transition: 0.5s transform;
+}
+
+.title-logo:hover {
+    -webkit-transform: rotate(360deg);
+}
+
+/*Simple media queries to demonstrate responsive design, in addition to that provided
+by Bootstrap CSS and JS.*/
+
+@media screen and (min-width: 500px) {
+    body {
+        color: orange;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        background-color: ghostwhite;
+    }
+}
+
