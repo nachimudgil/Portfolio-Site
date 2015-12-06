@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Project 1: Portfolio Site</title>
+
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<!--The container div has all the content of the body: the header(with the developer name and Udacity logo),
+the main centre of the page with the most significant image, and a featured work section with other, smaller
+images. The whole page utilises the row, column layout made possible by Bootstrap's CSS.-->
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6">
+                <img class="title-logo" src="udacity-logo.png" alt="Udacity logo">
+            </div>
+            <div class="col-md-6 text-right text-uppercase">
+                <header>
+                    <h1 class="title-super text-thin">Jane Doette</h1>
+                    <h4>Front-end Ninja</h4>
+                </header>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <picture>
+                    <img src="1-23.jpeg" alt="Main image" class="img-responsive center-block">
+                </picture>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <section>
+                    <h2 class="text-muted">Featured Work</h2>
+                </section>
+            </div>
+        </div>
+
+        <div class="row text-center">
+
+            <article class="col-md-4">
+                <picture>
+                    <img src="5f3f9326823eb13c188aae6775a8870e.jpg" class="img-responsive img-thumbnail"
+                         data-toggle="modal" data-target="#project1" alt="Appify image">
+                </picture>
+                    <h3 class="text-uppercase">Appify</h3>
+                    <p>https://github.com/udacity/appify</p>
+            </article>
+
+            <article class="col-md-4">
+                <picture>
+                    <img src="spider-man-barrel.jpg" class="img-responsive img-thumbnail"
+                         data-toggle="modal" data-target="#project2" alt="Sunflower image">
+                </picture>
+                    <h3 class="text-uppercase">Sunflower</h3>
+                    <p>https://github.com/udacity/sunflower</p>
+            </article>
+
+            <article class="col-md-4">
+                <picture>
+                    <img src="tumblr_m8r1hj7Gna1rcciplo1_500.jpg" class="img-responsive img-thumbnail"
+                         data-toggle="modal" data-target="#project3" alt="Bokeh image">
+                </picture>
+                    <h3 class="text-uppercase">Bokeh</h3>
+                    <p>https://github.com/udacity/bokeh</p>
+            </article>
+        </div>
+    </div>
+
+<!--The next 3 sections of code are dedicated to housing the modal feature, incorporated into the 3 images of
+ the featured work section of the page. Through Bootstrap's Javascript, whenever these images are clicked on they
+ create a popup modal with the image in question and a short area of dialog.-->
+
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Featured Work: Appify</h4>
+                </div>
+                <div class="modal-body">
+                    <picture>
+                        <img class="img-responsive"
+                             src="5f3f9326823eb13c188aae6775a8870e.jpg" alt="Appify image">
+                    </picture>
+                    This was my first project in this class. I learned a lot about HTML and CSS.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel2">Featured Work: Sunflower</h4>
+                </div>
+                <div class="modal-body">
+                    <picture>
+                        <img class="img-responsive" src="spider-man-barrel.jpg" alt="Sunflower image">
+                    </picture>
+                    This was my first project in this class. I learned a lot about HTML and CSS.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel3">Featured Work: Bokeh</h4>
+                </div>
+                <div class="modal-body">
+                    <picture>
+                        <img class="img-responsive" src="tumblr_m8r1hj7Gna1rcciplo1_500.jpg" alt="Bokeh image">
+                    </picture>
+                    This was my first project in this class. I learned a lot about HTML and CSS.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="jquery-1.11.3.js"></script>
+    <script src="bootstrap.js"></script>
+
+</body>
+</html>
